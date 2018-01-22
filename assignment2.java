@@ -25,6 +25,8 @@ public class assignment2 {
 		double heightInM = height*0.0254;
 		double bmiValue = weightInKg / (heightInM*heightInM);
 		
+		bmiValue = (int) (bmiValue * 10000) / 10000.0;
+		
 		System.out.println("Your BMI value is: "+ bmiValue);
 
 		
